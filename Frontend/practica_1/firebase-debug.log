@@ -1,0 +1,28 @@
+[debug] [2023-11-23T02:49:11.094Z] ----------------------------------------------------------------------
+[debug] [2023-11-23T02:49:11.100Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2023-11-23T02:49:11.101Z] CLI Version:   12.9.1
+[debug] [2023-11-23T02:49:11.101Z] Platform:      linux
+[debug] [2023-11-23T02:49:11.101Z] Node Version:  v20.6.1
+[debug] [2023-11-23T02:49:11.101Z] Time:          Wed Nov 22 2023 21:49:11 GMT-0500 (Colombia Standard Time)
+[debug] [2023-11-23T02:49:11.102Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-23T02:49:11.104Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-11-23T02:49:11.185Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-23T02:49:11.185Z] > authorizing via signed-in user (sebastoledo009@gmail.com)
+[debug] [2023-11-23T02:49:11.186Z] [iam] checking project prueba-contactos-cc3ce for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-23T02:49:11.186Z] > refreshing access token with scopes: []
+[debug] [2023-11-23T02:49:11.187Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-23T02:49:11.187Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-23T02:49:11.489Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-11-23T02:49:11.490Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-23T02:49:11.500Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-contactos-cc3ce:testIamPermissions [none]
+[debug] [2023-11-23T02:49:11.500Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-contactos-cc3ce:testIamPermissions x-goog-quota-user=projects/prueba-contactos-cc3ce
+[debug] [2023-11-23T02:49:11.501Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-contactos-cc3ce:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-23T02:49:12.271Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-11-23T02:49:12.271Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-11-23T02:49:12.283Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-contactos-cc3ce:testIamPermissions 200
+[debug] [2023-11-23T02:49:12.283Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-contactos-cc3ce:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-23T02:49:12.284Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/prueba-contactos-cc3ce [none]
+[debug] [2023-11-23T02:49:12.702Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/prueba-contactos-cc3ce 200
+[debug] [2023-11-23T02:49:12.702Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/prueba-contactos-cc3ce {"projectId":"prueba-contactos-cc3ce","projectNumber":"285609896051","displayName":"prueba-contactos","name":"projects/prueba-contactos-cc3ce","resources":{"hostingSite":"prueba-contactos-cc3ce"},"state":"ACTIVE","etag":"1_bcd4f2c3-3b91-4410-9e5b-66327d0cc043"}
+[debug] [2023-11-23T02:49:15.070Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/prueba-contactos-cc3ce/sites pageToken=&pageSize=10

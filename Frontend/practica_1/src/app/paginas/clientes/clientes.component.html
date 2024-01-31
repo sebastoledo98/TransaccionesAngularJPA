@@ -1,0 +1,40 @@
+<p>Clientes</p>
+<form>
+  <table>
+    <tr>
+      <td>Codigo</td>
+      <td><input type="number" name="txtCodigo" [(ngModel)]="cliente.id"></td>
+    </tr>
+    <tr>
+      <td>DNI</td>
+      <td><input type="text" name="txtDni" [(ngModel)]="cliente.dni"></td>
+    </tr>
+    <tr>
+      <td>Nombre</td>
+      <td><input type="text" name="txtNombre" [(ngModel)]="cliente.nombre"></td>
+    </tr>
+    <tr>
+      <td>Direccion</td>
+      <td><input type="text" name="txtDireccion" [(ngModel)]="cliente.direccion"></td>
+    </tr>
+  </table>
+  <button (click)='guardar()'>Guardar</button>
+</form>
+
+<hr/>
+
+<table>
+  <tr>
+    <th>Codigo</th>
+    <th>DNI</th>
+    <th>Nombre</th>
+    <th>Direccion</th>
+  </tr>
+  <tr *ngFor='let cli of clientes | async'>
+    <td>{{cli.id}}</td>
+    <td>{{cli.dni}}</td>
+    <td>{{cli.nombre}}</td>
+    <td>{{cli.direccion}}</td>
+  </tr>
+</table>
+

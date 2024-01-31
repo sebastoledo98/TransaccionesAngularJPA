@@ -1,0 +1,58 @@
+
+/* Estilos para el formulario de inserción de datos */
+form {
+  border: 2px solid #008000; /* Borde verde */
+  padding: 20px; /* Espaciado interno */
+  margin-bottom: 20px; /* Margen inferior */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para las celdas de la tabla de inserción de datos */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table tr {
+  border: 1px solid #008000; /* Borde verde */
+}
+
+table td {
+  padding: 10px; /* Espaciado interno */
+}
+
+/* Estilos para el botón de guardar */
+button {
+  background-color: #008000; /* Fondo verde */
+  color: #ffffff; /* Texto blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #006400; /* Cambio de color al pasar el ratón (verde oscuro) */
+}
+
+/* Estilos para la tabla de visualización de datos */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Margen superior */
+}
+
+table th, table td {
+  border: 1px solid #008000; /* Borde verde */
+  padding: 10px; /* Espaciado interno */
+  text-align: left;
+}
+
+/* Estilos para la fila de datos en la tabla de visualización */
+table tr {
+  transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+table tr:hover {
+  background-color: #f2f2f2; /* Color de fondo al pasar el ratón */
+}

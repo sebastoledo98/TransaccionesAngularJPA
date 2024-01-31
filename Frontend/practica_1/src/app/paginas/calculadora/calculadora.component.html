@@ -1,0 +1,31 @@
+<p>calculadora works!</p>
+
+<p tyoe="text">{{display}}</p>
+<br>
+<div>
+<button type="button" (click)="botNumero('1')">1</button>&nbsp;
+<button type="button" (click)="botNumero('2')">2</button>&nbsp;
+<button type="button" (click)="botNumero('3')">3</button>&nbsp;
+<button type="button" (click)="accion('+')">+</button>&nbsp;
+<br>
+<button type="button" (click)="botNumero('4')">4</button>&nbsp;
+<button type="button" (click)="botNumero('5')">5</button>&nbsp;
+<button type="button" (click)="botNumero('6')">6</button>&nbsp;
+<button type="button" (click)="accion('-')">-</button>&nbsp;
+<br>
+<button type="button" (click)="botNumero('7')">7</button>&nbsp;
+<button type="button" (click)="botNumero('8')">8</button>&nbsp;
+<button type="button" (click)="botNumero('9')">9</button>&nbsp;
+<button type="button" (click)="accion('*')">*</button>&nbsp;
+<br>
+<button type="button" (click)="botNumero('.')"> &nbsp;.</button>&nbsp;
+<button type="button" (click)="botNumero('0')">0</button>&nbsp;
+<button type="button" (click)="calcular()">=</button>&nbsp;
+<button type="button" (click)="accion('/')">/</button>&nbsp;
+<br><br>
+<button type="button" >Limpiar</button>
+</div>
+
+<div>
+  <textarea id="resultados" rows="10" cols="100">{{resultados}}</textarea>
+</div>

@@ -1,0 +1,11 @@
+<p>Transacciones</p>
+<form>
+  <label for="txtId1">Id Cliente 1</label>
+  <input type='text' name='txtId1' [(ngModel)]='transaccion.id1'>
+  <label for="txtId2">Id Cliente 2</label>
+  <input type='text' name='txtId2' [(ngModel)]='transaccion.id2'>
+  <label for="txtMonto">Monto</label>
+  <input type='text' name='txtMonto' [(ngModel)]='transaccion.monto'>
+  <button (click)='hacerTransaccion()'>Transaccion 1</button>
+  <button (click)='transaccion2()'>Transaccion 2</button>
+</form>

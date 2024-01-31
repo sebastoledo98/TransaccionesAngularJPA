@@ -1,0 +1,18 @@
+<p>contacto works!</p>
+
+<form>
+  <label for="txtCedula">Cedula</label>
+  <input name="txtCedula" id="txtCedula" [(ngModel)]='persona.id'/>
+  <br>
+  <label for="txtNombre">Nombre</label>
+  <input name="txtNombre" id="txtNombre" [(ngModel)]='persona.name'/>
+  <br>
+  <button type="button" (click)="savePersona()">Agregar Persona</button>
+</form>
+  <button type="button" (click)="listarContactos()">Listar Contactos</button>
+
+<!--button (click)="goAcercaDe()">Acerca De</button>
+
+{{name}} - {{id}}
+
+-->

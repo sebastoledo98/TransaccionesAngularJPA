@@ -1,0 +1,16 @@
+<p>Lista de Contactos</p>
+
+<ul>
+  <li *ngFor="let contacto of contactos">
+    <a (click)="goEditar(contacto)">Nombre: {{contacto.name}}</a>
+  </li>
+</ul>
+
+<p>Lista de Contactos en Firebase</p>
+
+<ul>
+  <li *ngFor="let contacto of listaContactos | async">
+    <a (click)="goEditar(contacto)">{{contacto.name}}</a> |
+    <a routerLink="/paginas/contacto/{{contacto.uid}}">{{contacto.name}}</a>
+  </li>
+</ul>
